@@ -5,11 +5,11 @@ def cal(a, b):
         for i in range(len(b)):
             result.append([0]*len(a[0]))
             
-    for i in len(a):
-        for j in len(b):
+    for i in range(len(a)):
+        for j in range(len(b)):
+            for k in range(len(a[i])):
             #c[0][0] = a[0][0] * b[0][0] + a[0][1] * b[1][0]
             #c[0][1] = a[0][0] * b[0][1] + a[0][1] * b[1][1]
 
             #c[1][0] = a[1][0] * b[0][0] + a[1][1] * b[1][0]
-
-            result[i][j] += a[i][k] * b[k][j]
+                result[i][j] += a[i][k] * b[k][j]
